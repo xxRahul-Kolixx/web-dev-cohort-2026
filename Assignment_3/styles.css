@@ -1,6 +1,8 @@
 :root {
   --primary-color: rgb(20, 18, 11);
   --secondary-color: rgb(28, 26, 20);
+   --text-active: #e5e7eb;   
+  --text-muted:  #9ca3af;  
 }
 
 * {
@@ -59,7 +61,8 @@ header ul li:hover {
 }
 
 .hero,
-.trustedby,.features {
+.trustedby,
+.features {
   display: flex;
   flex-direction: column;
   max-width: 85%;
@@ -97,7 +100,7 @@ header ul li:hover {
 
 .logo-container {
   display: grid;
-  grid-template-columns: repeat(8,1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 20px;
   margin: 24px auto;
 }
@@ -106,7 +109,7 @@ header ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   padding: 30px;
   border-radius: 4px;
   background-color: rgb(28, 26, 20);
@@ -123,10 +126,11 @@ header ul li:hover {
   padding: 20px;
   border-radius: 4px;
   display: grid;
-
+  column-gap: 30px;
 }
 
-.b1,.b3 {
+.b1,
+.b3 {
   grid-template-columns: 0.35fr 0.65fr;
 }
 
@@ -138,14 +142,24 @@ header ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 12px;
 }
 
 .block .bg-img {
   overflow: hidden;
   border-radius: 4px;
+  background-size: auto;
 }
 
+.block-text .primary-text {
+  font-size: 26px;
+  color: var(--text-muted);
+}
 
+.block-text .primary-text::first-line{
+  color: var(--text-active);
+}
 
-
+.block-text .secondary-text {
+  color: orangered;
+}
