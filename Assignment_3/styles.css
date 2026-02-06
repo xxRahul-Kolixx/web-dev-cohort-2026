@@ -379,13 +379,12 @@ cursor: pointer;
   background-color: #26241e;
   border-radius: 4px;
   padding: 16px 12px;
-  position: relative;
 }
 
 .highlight .meta {
-  position: absolute;
   bottom: 10px;
   color: var(--text-muted);
+  margin-top: 50px;
 }
 
 .highlight .primary {
@@ -401,4 +400,26 @@ cursor: pointer;
 .highlights-holder  > p {
   margin-top: 20px;
   color: orangered;
+}
+
+.try {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.try h1 {
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--text-active);
+}
+
+.try  .download {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
