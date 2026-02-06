@@ -19,11 +19,11 @@ body {
 header {
   position: sticky;
   top: 0px;
-  width: 85%;
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  align-items: center;
+  padding: 16px 10%;
   background-color: rgb(20, 18, 11);
 }
 
@@ -50,8 +50,9 @@ header ul li:hover {
 }
 
 .sign-in {
-  background-color: rgb(38, 36, 30);
+  background-color: var(--primary-color);
   color: #edecec;
+  border: 0.5px solid #edecec;
 }
 
 .download {
@@ -65,7 +66,8 @@ header ul li:hover {
 .features,
 .reviews,
 .use-cases,
-.changelog {
+.changelog,
+.joinus {
   display: flex;
   flex-direction: column;
   max-width: 85%;
@@ -279,8 +281,7 @@ header ul li:hover {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   column-gap: 20px;
-  
- 
+
 }
 
 .log {
@@ -313,5 +314,91 @@ cursor: pointer;
 }
 
 .new {
+  color: orangered;
+  cursor: pointer;
+}
+
+.joinus {
+  margin-top: 150px;
+}
+
+.join-container {
+  height: 500px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  padding: 16px;
+  column-gap: 40px;
+  display: grid;
+  grid-template-columns: 0.35fr  0.65fr;
+}
+
+.join-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.join-container-left .primary-text {
+  font-size: 24px;
+  color: var(--text-active);
+}
+
+.join-container-left .hyper {
+  margin-top: 16px;
+  color: orangered;
+  cursor: pointer;
+}
+
+.join-container-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.highlights {
+  margin-top: 200px;
+  height: 600px;
+  background-color: var(--secondary-color);
+  padding: 100px;
+  display: flex;
+}
+
+.highlights .highlight-text {
+  width: 300px;
+  color: var(--text-active);
+}
+
+.highlights-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.highlight {
+  width: 600px;
+  height: 160px;
+  background-color: #26241e;
+  border-radius: 4px;
+  padding: 16px 12px;
+  position: relative;
+}
+
+.highlight .meta {
+  position: absolute;
+  bottom: 10px;
+  color: var(--text-muted);
+}
+
+.highlight .primary {
+  color: var(--text-active);
+}
+
+.highlight .secondary {
+  color: var(--text-muted);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.highlights-holder  > p {
+  margin-top: 20px;
   color: orangered;
 }
