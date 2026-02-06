@@ -64,7 +64,8 @@ header ul li:hover {
 .trustedby,
 .features,
 .reviews,
-.use-cases {
+.use-cases,
+.changelog {
   display: flex;
   flex-direction: column;
   max-width: 85%;
@@ -225,7 +226,7 @@ header ul li:hover {
   margin-top: 200px;
 }
 
-.use-cases h2 {
+.use-cases h2, .changelog h2 {
   color: var(--text-active);
   font-size: 28px;
   font-weight: 400;
@@ -266,4 +267,51 @@ header ul li:hover {
 .use-case img {
   height: 400px;
   overflow: hidden;
+}
+
+.changelog {
+  margin-top: 200px;
+  gap: 28px;
+}
+
+.log-holder {
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 20px;
+  
+ 
+}
+
+.log {
+background-color: var(--secondary-color);
+border-radius: 4px;
+padding: 16px;
+display: flex;
+flex-direction: column;
+cursor: pointer;
+}
+
+.log .top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.log .top button {
+  color: var(--text-muted);
+  background-color: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--text-muted);
+}
+
+.log .details {
+  color: var(--text-active);
+}
+
+.new {
+  color: orangered;
 }
