@@ -1,8 +1,8 @@
 :root {
   --primary-color: rgb(20, 18, 11);
   --secondary-color: rgb(28, 26, 20);
-   --text-active: #e5e7eb;   
-  --text-muted:  #9ca3af;  
+  --text-active: #e5e7eb;
+  --text-muted: #9ca3af;
 }
 
 * {
@@ -62,7 +62,9 @@ header ul li:hover {
 
 .hero,
 .trustedby,
-.features {
+.features,
+.reviews,
+.use-cases {
   display: flex;
   flex-direction: column;
   max-width: 85%;
@@ -156,10 +158,112 @@ header ul li:hover {
   color: var(--text-muted);
 }
 
-.block-text .primary-text::first-line{
+.block-text .primary-text::first-line {
   color: var(--text-active);
 }
 
 .block-text .secondary-text {
   color: orangered;
+}
+
+.reviews {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.review-heading {
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--text-active);
+  text-align: center;
+}
+
+.review-card-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.review-card {
+  height: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+}
+
+.review-card .msg {
+  color: var(--text-active);
+  line-height: 1.5;
+}
+
+.review-card .details {
+  display: flex;
+  gap: 8px;
+}
+
+.review-card .details img {
+  width: 40px;
+  border: 4px;
+}
+
+.text-details .name {
+  color: var(--text-active);
+  margin-bottom: 4px;
+}
+
+.text-details .designation {
+  color: var(--text-muted);
+}
+
+.use-cases {
+  margin-top: 200px;
+}
+
+.use-cases h2 {
+  color: var(--text-active);
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.use-case-holder {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.use-case {
+  height: 500px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+}
+
+.use-case .main {
+  color: var(--text-active);
+  margin-bottom: 4px;
+}
+
+.use-case .secondary {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.use-case .hyper {
+  color: orangered;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+
+
+.use-case img {
+  height: 400px;
+  overflow: hidden;
 }
