@@ -32,15 +32,6 @@ The goal of this assignment was to practice real-world UI cloning by recreating 
 
 ---
 
-## Design Notes
-
-- CSS variables are used for colors and text styles
-- Layout closely follows Cursor’s spacing and hierarchy
-- Layered images are implemented using `position: relative` and `position: absolute`
-- This is a **UI-only clone** with no JavaScript logic
-
----
-
 ## Responsiveness
 
 - This project is **not responsive**
@@ -56,9 +47,14 @@ This project does not require any setup or dependencies.
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/xxRahul-Kolixx/web-dev-cohort-2026.git
    ```
 
-```
-2. Open index.html directly in your browser.
-```
+
+2. Navigate to Assignment 3
+    ```bash
+    cd web-dev-cohort-2026/Assignment-3
+    ```
+
+3. Open index.html in browser
+
