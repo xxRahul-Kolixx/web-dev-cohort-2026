@@ -25,6 +25,7 @@ header {
   align-items: center;
   padding: 16px 10%;
   background-color: rgb(20, 18, 11);
+  z-index: 10;
 }
 
 .logo {
@@ -55,10 +56,18 @@ header ul li:hover {
   border: 0.5px solid #edecec;
 }
 
+.sign-in:hover {
+  background-color: rgb(25, 23, 16);
+}
+
 .download {
   background-color: rgb(237, 237, 237);
   color: 111111;
   margin-left: 4px;
+}
+
+.download:hover {
+ background-color: rgb(200, 200, 200);
 }
 
 .hero,
@@ -92,10 +101,19 @@ header ul li:hover {
   border: none;
 }
 
-.hero img {
+.hero .back {
   margin: 80px 0px;
   height: 600px;
   border-radius: 5px;
+  position: relative;
+}
+
+.hero .front {
+  position: absolute;
+  scale: 0.7;
+ top: 280px;
+ z-index: 1;
+  
 }
 
 .trustedby {
@@ -151,10 +169,29 @@ header ul li:hover {
 }
 
 .block .bg-img {
-  overflow: hidden;
+  position: relative;
+
   border-radius: 4px;
-  background-size: auto;
 }
+
+.block .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.block .bg-img .front {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  z-index: 1;
+  
+}
+
 
 .block-text .primary-text {
   font-size: 26px;
@@ -314,6 +351,10 @@ cursor: pointer;
   color: var(--text-active);
 }
 
+.log:hover {
+  background-color: #26241e;
+}
+
 .new {
   color: orangered;
   cursor: pointer;
@@ -380,6 +421,10 @@ cursor: pointer;
   background-color: #26241e;
   border-radius: 4px;
   padding: 16px 12px;
+}
+
+.highlight:hover {
+ background-color: #3a3832;
 }
 
 .highlight .meta {
