@@ -267,8 +267,9 @@ header ul li:hover {
 
 
 .use-case img {
-  height: 400px;
-  overflow: hidden;
+  height: 390px;
+  border-radius: 4px;
+  width: 100%
 }
 
 .changelog {
