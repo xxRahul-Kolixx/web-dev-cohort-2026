@@ -29,6 +29,8 @@ body {
   background-color: var(--color-background-main);
   color: var(--color-text-main);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -39,7 +41,7 @@ header {
   background-color: lab(100% 0 0 / 0.005);
 }
 
-header .container {
+.container {
   width: 70%;
   margin: 0 auto;
   padding: 10px;
@@ -65,10 +67,10 @@ header nav ul {
   font-weight: 500;
 }
 
-
 header nav ul li {
   padding: 8px 12px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 header nav ul li:hover {
@@ -89,6 +91,10 @@ header .cta-1 {
   color: var(--color-text-main);
 }
 
+header .cta-2:hover {
+  background-color: var(--color-muted);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -100,4 +106,62 @@ main {
   background-image: url(/assets/section-1/bg-dark.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero .container {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.hero .container .new-feat {
+  display: flex;
+  background-color: var(--color-background-soft);
+  padding: 4px 8px;
+  border-radius: 20px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.hero .container .new-feat .new {
+  background-color: var(--color-brand-light);
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.hero .container .new-feat .circle-arrow {
+  color: var(--color-text-invert);
+  background-color: var(--color-background-invert);
+  border-radius: 50%;
+  padding: 0 6px;
+}
+
+.hero .container h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 56px;
+}
+
+.hero .container .description {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-text-main);
+}
+
+.hero .container .ask-email {
+  margin-top: 30px;
+  background-color: var(--color-muted);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 25px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ask-email .input {
+ 
 }
