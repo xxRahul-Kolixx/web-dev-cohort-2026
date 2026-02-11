@@ -35,7 +35,7 @@ The resume includes all standard sections such as profile header, about, skills,
 1. Clone the repository:
 
 ```
-[text](https://github.com/xxRahul-Kolixx/web-dev-cohort-2026.git)
+git clone https://github.com/xxRahul-Kolixx/web-dev-cohort-2026.git
 ```
 
 2. Open Assignment 1
