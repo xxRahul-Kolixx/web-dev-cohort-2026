@@ -197,6 +197,45 @@ main {
   pointer-events: none;
 }
 
+.companies {
+  background-color: var(--color-background-main);
+}
+
+.flex-container {
+   width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-container .company {
+  width: 200px;
+  padding: 10px;
+}
+
+.flex-container .company img {
+  width: 120px;
+  height: 120px;
+}
+
+
+
+.flex-container .xlogo img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 40px;
+}
+
+
+
+
+
+
 
 
 
