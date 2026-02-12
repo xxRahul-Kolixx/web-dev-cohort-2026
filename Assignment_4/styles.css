@@ -231,6 +231,72 @@ main {
   left: 40px;
 }
 
+.features {
+  margin-top: 140px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 42px;
+}
+
+.features p {
+  margin-top: 20px;
+  line-height: 1.5;
+  color: var(--color-text-sub);
+}
+
+.features .container {
+  flex-direction: column;
+}
+
+.container .two-features {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.two-features .card {
+  padding: 20px;
+  width: 500px;
+  height: 550px;
+  border: 1px solid var(--color-border-sub);
+  border-radius: 25px;
+  text-align: left;
+}
+
+.assistant {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 1020px;
+  height: 650px;
+  border: 1px solid var(--color-border-sub);
+  border-radius: 25px;
+  margin-bottom: 150px;
+}
+
+.card .card-title , .assistant .card-title {
+  color: var(--color-brand);
+  font-size: 12px;
+}
+
+.card .card-heading, .assistant .card-heading {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.card img , .assistant img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+
+
 
 
 
