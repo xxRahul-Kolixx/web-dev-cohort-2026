@@ -38,7 +38,8 @@ header {
   position: fixed;
   top: 0px;
   z-index: 2;
-  background-color: lab(100% 0 0 / 0.005);
+  background-color: lab(100% 0 0 / 0.001);
+  backdrop-filter: blur(10px);
 }
 
 .container {
@@ -102,7 +103,7 @@ main {
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
   background-image: url(/assets/section-1/bg-dark.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,7 +153,7 @@ main {
 
 .hero .container .ask-email {
   margin-top: 30px;
-  background-color: var(--color-muted);
+  background-color: var(--color-background-soft);
   font-size: 16px;
   font-weight: 500;
   padding: 8px 12px;
@@ -162,6 +163,41 @@ main {
   justify-content: space-between;
 }
 
-.ask-email .input {
- 
+.ask-email input {
+  color: var(--color-text-soft);
+  background: none;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
 }
+
+.mint-dashboard {
+  margin-top: 80px;
+  position: relative;
+}
+
+.mint-dashboard img {
+  border-radius: 25px;
+  border: 2px solid var(--color-border-sub);
+}
+
+.mint-dashboard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    var(--color-background-main) 100%
+  );
+
+  pointer-events: none;
+}
+
+
+
+
+
