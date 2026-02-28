@@ -392,25 +392,89 @@ main {
   left: -30px;
 }
 
-.customers {
+.customers-showcase {
+  background: var(--color-background-main);
+  padding: 140px 0;
+}
+
+.customers-container {
+  width: 70%;
+  margin: 0 auto;
   text-align: center;
 }
 
+.customers-tag {
+  color: var(--color-brand);
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.customers-heading {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.customers-subtext {
+  color: var(--color-text-sub);
+  font-size: 18px;
+  margin-bottom: 80px;
+}
 
 
+.customers-cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.customer-card {
+  width: 380px;
+  background: var(--color-background-main);
+  border-radius: 24px;
+  text-align: left;
+}
+
+.customer-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+}
+
+.card-desc {
+  padding: 20px;
+  color: var(--color-text-sub);
+  line-height: 1.5;
+}
+
+.read-story {
+  padding: 0 20px 24px;
+  display: inline-block;
+  font-size: 14px;
+}
 
 
+.customers-nav {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
 
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.5;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-btn.active {
+  opacity: 1;
+}
