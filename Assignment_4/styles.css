@@ -103,7 +103,6 @@ main {
 }
 
 .hero {
-  height: 100%;
   background-image: url(/assets/section-1/bg-dark.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,7 +277,7 @@ main {
   margin-bottom: 150px;
 }
 
-.card .card-title , .assistant .card-title {
+.card .card-title , .assistant .card-title, .enterprise-features .card-title {
   color: var(--color-brand);
   font-size: 12px;
 }
@@ -294,6 +293,115 @@ main {
   width: auto;
   height: auto;
 }
+
+.enterprise {
+  background-color: var(--color-border-sub);
+  height: 1400px;
+}
+
+.enterprise .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.enterprise-features {
+  margin-top:  100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+
+.enterprise .two-flex {
+  display: flex;
+  gap: 180px;
+}
+
+.two-flex button {
+  padding: 12px 24px;
+}
+
+.enterprise-features .card-heading {
+  font-size: 36px;
+}
+
+.partner-compliance {
+   display: flex; 
+   margin-top: 80px;
+}
+
+.invisible-card .card-icon {
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.invisible-card .card-heading{
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.invisible-card .card-description {
+  color: var(--color-muted);
+  margin-bottom: 80px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+
+
+.anthropic {
+  position: relative;
+}
+
+.anthropic img {
+  
+  border-radius: 20px;
+
+}
+
+.anthropic-data {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.anthropic-data .card-heading {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.anthropic-data .cta-msg {
+  margin-top: 36px;
+}
+
+.stats {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  display: flex;
+  gap: 32px;
+}
+
+.stats-card .number {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.customer-story-logos .flex-container {
+  flex-wrap: nowrap;
+  position: relative;
+  left: -30px;
+}
+
+.customers {
+  text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
